@@ -1,0 +1,1119 @@
+/* Main */
+
+
+.home{
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    width: calc(100% - 32px);
+}
+ .slick-slider.slick-slide.slick-active.slick-current {
+  padding-left: 0px;
+}
+/* HeroSection */
+.promo-banner{
+    height:500px;
+  }
+  .imgslide{
+    background-color: #1a1a22;
+    /* height: 500px;
+    border-radius: 20px; */
+    height: 320px;
+    margin-bottom: 24px;
+  }
+  .banner{
+    overflow: hidden;
+  }
+  .banner .slick-list {
+    box-shadow: 0px 3px 10px 0px #353b3b;
+    border-radius: 0.5rem;
+  }
+    .banner .slick-list img {
+    display: block;
+    filter: contrast(1.2);
+    cursor: grab;
+  }
+  .slide-heading{
+    line-height: 115%;
+    margin-bottom: 3rem;
+  }
+  .slide-heading span{
+    color: #eb418a;
+  }
+  .imgslider .slick-slider .slick-next, .home-bonuses-slider.slick-slider .slick-prev {
+    background: rgba(10, 10, 13, .65);
+    color: #fff;
+    height: 48px;
+    line-height: 1;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background .3s ease, opacity .3s ease;
+    width: 48px;
+    z-index: 1;
+  }
+  .banner-content {
+    height: 100%;
+    max-width: 343px;
+    padding: 40px 16px;
+    width: 100%;
+    z-index: 3;
+  }
+  .imgslide .slick-slider .slick-dots{
+    bottom: 16px;
+    z-index: 999;
+  }
+  .imgslide .slick-slider .slick-dots li.slick-active button:before {
+    background: #eb418a;
+  }
+  .imgslide .slick-slider .slick-dots li{
+    height: 4px!important;
+    width: 28px!important;
+  }
+  .imgslide .slick-slider .slick-dots li button{
+    background:transparent;
+    border: 0;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 4px!important;
+    line-height: 0px;
+    outline: none;
+    padding: 0;
+    position: relative;
+    width: 28px!important;
+  }
+  .imgslide .slick-slider .slick-dots li button:before {
+    background: hsla(0, 0%, 100%, .65);
+    border-radius: 17px;
+    content: "";
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: background .3s ease;
+    width: 100%;
+  }
+  .slick-arrows{
+    align-items: center;
+    background-color: #1a1a22;
+    background-image: none;
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    color: hsla(0, 0%, 100%, .65);
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 13px;
+    height: 32px;
+    justify-content: center;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    text-shadow: none;
+    transition: background-color .3s ease, opacity .3s ease;
+    width: 32px;
+  }
+  .imgslider .slick-slider .slick-next, .imgslider .slick-slider .slick-prev{
+    background: rgba(10, 10, 13, .65);
+    color: #fff;
+    height: 48px;
+    line-height: 1;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background .3s ease, opacity .3s ease;
+    width: 48px;
+    z-index: 1;
+  }
+  .imgslider .slick-slider:hover .slick-next,.slick-prev{
+    display: block;
+    opacity:1;
+  }
+  .imgslide .slick-slider .slick-prev {
+    left: 1.25rem;
+  }
+  .imgslide .slick-slider .slick-next{
+    right: 2rem;
+  }
+  .slick-slider.banner .slick-next,.slick-slider.banner .slick-prev{
+    display: none !important;
+    opacity:0;
+    transition: all 0.7s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0,.68,0,.98);
+  }
+
+  .slick-slider.banner:hover .slick-next,.slick-slider.banner:hover .slick-prev{
+    display: block !important;
+    opacity:1;
+  }
+  
+  .slick-prev:before, .slick-next:before{
+    font-size: 2rem;
+  }
+  .slick-next {
+    right: 1rem;
+  }
+  
+  .slick-prev {
+    left: 0.25rem;
+    z-index: 99;
+  }
+  
+   .addnav .slick-track{
+    max-width:1500px!important;
+  }
+  
+  .addnav .slick-track .slick-slide{
+   width: 300px!important;
+  } 
+  
+  .join-now{
+    animation: 1;
+    background-color: #eb418a;
+  }
+  .promo-card-btn:hover{
+    background: #db1b6d;
+    color: #fff;
+  }
+  
+/* FilterNav */
+
+    .filter-wrapper{
+        display: flex;
+    }
+    .providers-btn{
+        padding: 0.7rem 1.5rem;
+        /* min-width: 7rem; */
+        align-items: center;
+        background: #22222b;
+        border-radius: 8px;
+        color: #fff;
+        column-gap: 0.75rem;
+        display: flex;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        justify-content: center;
+        line-height: 24px;
+        /* margin-top: 1rem; */
+        position: relative;
+        transition: background .3s ease;
+    }
+    .category-item-link:hover .switcher-item-title{
+      color:#fff;
+    }
+/* NavCategory */
+.game-category-select{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 16px;
+    scrollbar-width: none;
+}
+.game-category-select {
+    padding: 6px 0px;
+    margin-left: -1rem;
+    overflow-x: visible;
+    position: relative;
+    width: calc(100% + 32px);
+}
+
+.category-item-link{
+    align-items: center;
+    background: transparent;
+    border-radius: 40px;
+    color: #fff;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    display: flex;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 40px;
+    line-height: 1;
+    margin: 0 1px;
+    padding: 0 16px;
+    transition: background .3s ease;
+    min-height: 42px;
+}
+.category-item-link:hover{
+  background-color: #0a0a0d;
+  transition: background-color .3s ease;
+ }
+ .category-item-link .switcher-item-title:hover{
+    color: #fff;
+ }
+ .providers-btn:hover{
+  background-color: rgba(255, 255, 255, .06);
+ 
+ }
+ .providers-btn:hover .switcher-item-title{
+  color: #fff;
+ }
+/* HeroSection */
+/* Promotions */
+
+.section-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  /* margin-left: 1rem; */
+}
+.card-item{
+  border-radius: 12px;
+}
+/* .promo-heading{
+  color: white;
+  font-weight: 600;
+  font-size: 1.75rem;
+} */
+.section-link-btns{
+  display: flex;
+}
+.see-more-btn{
+  height: 40px;
+}
+.slide-controls{
+  display: flex;
+
+  margin-left: 1.2rem;
+  gap: 0.5rem;
+}
+.slide-control-outline{
+  background: transparent;
+  color: #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.arrow-outline{
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.promo-slider.slick-slider.slick-initialized .slick-slide {
+  display: block;
+}
+/* .promo-slider .slick-list div{
+
+} */
+.newgames-wrapper .card-item,.jackpot-wrapper .card-item,.popular-wrapper .card-item,.ourpick-wrapper .card-item{
+   display: inline-block;
+   border-radius: 12px;
+   overflow: hidden;
+   max-height: 218px;
+   max-width: 218px;
+   position: relative;
+  
+}
+.card-label{
+  /* display: flex;
+  flex-direction: column;
+  gap: 0.5rem; */
+  position: absolute;
+  top: 0px;
+  left: 7px;
+}
+.promotion-card{
+  position: relative;
+  display: flex;
+  height:100%;
+  width: 100%;
+  min-height: 312px;
+      overflow: hidden;
+    border-radius: 16px;
+}
+.promotion-card-content{
+  position: absolute;
+}
+.promotion-card-img{
+  object-fit: cover;
+}
+.promotion-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+.promo-card-title{
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .2px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+.promo-card-text{
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 26px;
+  margin: 16px 0 12px;
+  text-transform: uppercase;
+}
+.promo-card-text span{
+  display: block;
+}
+.promo-card-btns{
+  display: flex;
+  gap: 1.5rem; 
+}
+.text-btn{
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: white;
+}
+/* Popular */
+/* Jackpot */
+
+/* HomeWidget */
+.home-sports-widget {
+  background: url('../../assets/widget/widget-tab-bg.webp') 0 no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  margin: 48px 0 32px;
+  overflow: hidden;
+  padding: 32px 0;
+  position: relative;
+}
+.home-sports-widget .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.widget-slider {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  /* row-gap: 24px; */
+  width: 100%;
+}
+.widget-slider .slick-slider .slick-prev{
+  left: 90%!important;
+}
+.widget-slider .slick-slider .slick-next {
+  right: 3rem !important;
+}
+.base-slider{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.widget-content{
+  align-items:center;
+  display: flex;
+  flex-direction: column;
+  min-width: 525px;
+}
+.widget-title{
+  color: #fff;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0 auto 64px;
+  max-width: 447px;
+  text-align: center;
+}
+.widget-title span{
+  display: block;
+}
+.widget-btn{
+  height: 3.5rem;
+  font-size: 1.25rem;
+}
+.widget-btn:hover{
+background: #db1b6d;
+color: #fff;
+}
+.widget-slick-slider{
+  display: flex;
+    gap: 1rem;
+}
+.widget-slider-card{
+  backdrop-filter: blur(20px);
+  background:rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  /* min-height: 192px; */
+  padding: 0.75rem;
+  gap:1rem;
+  width: 100%;
+}
+.widget-card-header{
+  align-items: center;
+  color:rgba(255,255,255,0.65);
+  gap: 1rem;
+  display: flex;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 400;
+  justify-content: space-between;
+  line-height: 16px;
+}
+.widget-card-details{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  /* letter-spacing: 1px; */
+}
+.widget-card-teams{
+  display: flex;
+  justify-content: space-around;
+}
+.team-img{
+  height:100%;
+}
+.team-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 0.95rem;
+  gap: 0.5rem;
+}
+.team-vs{
+  color: hsla(255, 255, 255, 40%);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 24px;
+    text-align: center;
+}
+.team-img-wrapper{
+  height:58px ;
+}
+.widget-card-bets{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.widget-card-bet-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, .06);
+  border-radius: 4px;
+  color: rgba(255, 255,255, 65%);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 12px;
+  text-transform: uppercase;
+  transition: background .3s ease;
+  width: 100%;
+}
+.card-coefficient{
+  color: #fff;
+}
+/* NewGames */
+
+.promo-slider .slick-slider .slick-next{
+  top: -2.5rem;
+}
+.promo-slider .slick-slider .slick-prev{
+  left: 95%;
+  top: -2.5rem;
+  right: 0px;
+}
+.game-card{
+  border-radius: 8px;
+    display: flex;
+    font-size: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.game-card-img{
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+.game-card-content {
+  z-index: 999;
+  align-items: center;
+  background-color: rgba(10, 10, 13, .65);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  /* opacity: 0; */
+  overflow: hidden;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s ease;
+  width: 100%;
+}
+/* .labels{
+  position: absolute;
+  left: 5px;
+  top: 2px;
+} */
+.game-label{
+  margin-right: 0.5rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  color: #0a0a0d;
+}
+.game-label-new{
+  background: #b9e645;
+
+}
+.game-label-exclusive {
+  background: radial-gradient(243.63% 279.45% at 127.61% -17.5%, #2ad0ca 0, #e1f664 22.92%, #feb0fe 56.7%, #5df7a4 98.15%);
+}
+.btn-play {
+  padding: 1rem;
+  background: #eb418a;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+/* TopGames */
+.topgame{
+  max-width: 218px;
+  max-height: 218px;
+  position: relative;
+}
+.game-img-block{
+  border-radius: 8px;
+  display: flex;
+  font-size: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+.game-img{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.game-action{
+  align-items: center;
+  background-color: rgba(10, 10, 13, .65);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s ease;
+  width: 100%;
+}
+.game-play {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.game-play-btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #db1b6d;
+  color: #fff;
+  border-radius: 50%;
+  padding: 12px 20px;
+}
+.play-btn{
+  min-width: 40px;
+  min-height: 19px;
+}
+.game-title{
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 8px 0px;
+  max-width: 144px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.title-link{
+  color: #fff;
+}
+.title-link:hover{
+  color: #fff;
+}
+.game-provider{
+  color: rgba(255,255,255,65%);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: .2px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.demo-btn{
+  position: absolute;
+  right: 80px;
+  bottom: 10px;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: .2px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  transition: background .3s ease;
+}
+.demo-btn:hover{
+  background: rgba(10, 10, 13, .65);
+}
+/* HomeWinners*/
+
+ 
+.tab-list {
+  gap:2rem;
+  display: flex;
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+  font-size: 1.75rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 1rem;
+
+}
+/* 
+.tabs:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+} */
+.content-container{
+  width: 100%;
+}
+.active-tabs {
+  color: #fff;
+}
+
+.content {
+    color: #fff;
+    display: none;
+    padding: 10px;
+}
+
+.active-content {
+    display: flex;
+}
+.winner-card{
+  background: #1a1a22;
+  border-radius: 8px;
+  display: flex;
+  position: relative; 
+  width: 100%;
+  max-width: 19%;
+  flex: 0 0 19%;
+  margin-left: 1.25%;
+}
+.winner-card:first-child{
+  margin-left: 0;
+}
+/* .winner-avatar-link{
+  max-width: 96px;
+} */
+.winner-avatar-link .avatar-img{
+  border-radius: 8px;
+  height: 96px;
+  width: 96px;
+}
+.winner-info {
+  overflow: hidden;
+  padding: 14px 16px;
+  text-align: left;
+  white-space: nowrap;
+}
+.winner-sum, .winner-username {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.winner-game-link, .winner-sum, .winner-username {
+  max-width: 100%;
+  overflow: hidden;
+}
+.winner-game-link:hover{
+  color: #fff;
+}
+.winner-username {
+  color: rgba(255, 255, 255, 0.247);
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.winner-sum {
+  color: #fff;
+  font-size: 1.12rem;
+  line-height: 1;
+}
+.winner-game-link {
+  color: hsla(0, 0%, 100%, .4);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  transition: color .3s ease;
+}
+.winner-top-img{
+  height: 24px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 24px; 
+}
+
+/* VIP section */
+.vip-wrapper{
+  position: relative;
+  min-height: 700px;
+  margin-bottom: 14rem;
+}
+.vip-bg{
+  position: absolute;
+  left: 350px;
+  top: -25px;
+}
+
+.vip-benefits-text{
+  max-width: 600px;
+  position: absolute;
+  top:220px;
+  left: 50px;
+
+}
+
+.vip-title{
+  font-size: 54px;
+  font-weight: 700;
+  margin: 0 0 32px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.vip-title span{
+  display: block;
+}
+
+.vip-desc{
+  margin-bottom: 48px;
+  color: rgba(255, 255, 255, 65%);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.vip-card{
+  position: absolute;
+  padding: 1.5rem;
+  min-width: 308px;
+  max-width: 308px;
+  border-radius: 12px;
+  background:rgba(255,255,255,0.04);
+  backdrop-filter: blur(20px);
+  min-height: 180px;
+}
+.vip-card:before{
+  background: transparent;
+    border-bottom: 1px solid #b9e645;
+    border-radius: 12px;
+    border-right: 1px solid #b9e645;
+    bottom: -8px;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: -8px;
+    width: 100%;
+    z-index: -1;
+}
+.vip-card-one{
+ right: 280px;
+ top: 200px;
+}
+.vip-card-two{
+  right:170px;
+  top: 450px;
+}
+.vip-card-title{
+  color:#fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.vip-card-list{
+  padding: 0.5rem;
+}
+.vip-card-item{
+  padding-top: .5rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 0.4rem;
+}
+.card-desc{
+  font-weight: 500;
+  padding-top:1rem;
+  padding-left: 1rem;
+}
+.trophy{
+  position: absolute;
+  bottom: calc(0% + 1px);
+  right: 0;
+}
+
+
+/* Providers */
+.providerslider .card-item{
+  background: #1a1a22;
+  border-radius: 8px;
+  transition: background .3s ease;
+}
+.providerslider .card-item:hover {
+  background: #22222b;
+}
+.providerslider .provider-card{
+  min-height: 112px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+}
+.providerslider .game-card-img{
+  margin: 0 16px;
+  max-height: 72px;
+  max-width: 144px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Medai Queries */
+@media (min-width: 768px) {
+    .home {
+        padding: 16px 0 0;
+    }
+    .container {
+         max-width: 1616px;
+         width: calc(100% - 48px);
+    }
+    .filter-nav {
+            margin-bottom: 32px;
+    }
+    .filter-nav {
+        margin-bottom: 32px;
+    }
+    .filter-wrapper{
+        align-items: center;
+        background: #1a1a22;
+        border-radius: 12px;
+        justify-content: space-between;
+        padding:1rem;
+    }
+    .game-category-select{
+        margin-left: 0;
+        overflow: hidden;
+        padding-right: 0.75rem;
+    }
+    .game-category-select {
+        padding: 7px 0px;
+    }
+    .imgslide {
+        border-radius: 20px;
+        height: 360px;
+        margin-left: 0;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .banner-content {
+      max-width: 414px;
+      padding: 40px 32px;
+  }
+  .home-sports-widget {
+    background: url('../../assets/widget/widget-desktop-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .filter-nav-category {
+    margin-left: 0;
+    overflow: hidden;
+    padding-right: 12px;
+}
+.category-item-link {
+  font-size: 16px;
+  height: 48px;
+  line-height: 24px;
+}
+}
+
+@media (min-width: 1200px) {
+    .home {
+        padding: 24px 0 0;
+    }
+    .container {
+      max-width: 1616px;
+      width: calc(100% - 64px);
+    }
+  .promo-slider .slick-slider .slick-list {
+      overflow: hidden;
+  }
+  .promotion-card-content {
+      padding: 32px 24px 24px 32px;
+  }
+  .promo-card-text {
+      font-size: 26px;
+      line-height: 32px;
+      margin: 20px 0 12px;
+  }
+  .promo-slider .slick-slider .slick-slide {
+      padding: 0 8px;
+      outline: none;
+       
+  }
+  .widget-content{
+    align-items: flex-start;
+  }
+  .banner-content{
+    max-width: 600px;
+    padding: 56px;
+  }
+  .imgslide{
+    height:420px;
+    margin-bottom: 24px;
+  }
+  .home-sports-widget {
+    /* background-position: 50%; */
+    border-radius: 12px;
+    margin: 3.5rem 0 3.25rem;
+    padding: 3rem 0 4rem;
+}
+  .home-sports-widget .container {
+    flex-direction: row;
+    margin-top: 2rem; 
+  }
+  .home-sportsbook-widget__slider {
+    width: 656px;
+}
+   .widget-title {
+  font-size: 32px;
+  margin: 0 0 70px;
+  text-align: left;
+}
+.widget-slider{
+  width:656px;
+}
+.game-play-btn{
+ border-radius: 50%;
+ position: relative;
+ height: 3.5rem;
+ width: 3.5rem;
+ vertical-align: middle;
+}
+.game-play-btn:hover{
+  color:#fff;
+}
+.widget-slider .slick-slider .slick-prev{
+  left: 81%!important;
+}
+.widget-slider .slick-slider .slick-next {
+  right: 9rem !important;
+}
+}
+@media (min-width: 1440px) {
+  .imgslide{
+    height: 420px;
+  }
+    .banner-content {
+      max-width: 728px;
+      padding: 62px 72px;
+    }
+    .home-sportsbook-widget__slider {
+      width: 911px;
+    }
+    .widget-title {
+      margin: 0 0 80px;
+    }
+    .widget-slider{
+      width:911px;
+    }
+   
+    }
+
+    @media (min-width: 1680px) {
+      .imgslide{
+        height: 500px;
+        margin-bottom: 24px;
+    }  
+      .widget-slider{
+        width:1070px;
+      }
+      .widget-card{
+        max-width: 346px;
+        min-width: 346px;
+      }
+
+  }
